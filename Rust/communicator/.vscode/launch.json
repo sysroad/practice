@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type":"lldb",
+            "request":"launch",
+            "name": "Debug(lldb)",
+            "program": "${workspaceRoot}/target/debug/communicator",
+            "cwd":"${workspaceRoot}",
+            "preLaunchTask": "cargo",
+            "sourceLanguages": ["rust"]
+        }
+    ],
+    "compounds": []
+}

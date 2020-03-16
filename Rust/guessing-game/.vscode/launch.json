@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type":"lldb",
+            "request":"launch",
+            "name": "Debug(lldb)",
+            "program": "${workspaceRoot}/target/debug/guessing-game",
+            "cwd":"${workspaceRoot}",
+            "preLaunchTask": "build",
+            "sourceLanguages": ["rust"]
+        }
+    ],
+    "compounds": []
+}

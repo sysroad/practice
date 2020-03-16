@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AppDomainBootstrap.cs" />
+    <Compile Remove="AppDomainBootstrap.Net40.cs" />
+    <Compile Remove="Extensions.Net35.cs" />
+    <Compile Remove="IProcessServer.cs" />
+    <Compile Remove="IRemoteWorkItem.cs" />
+    <Compile Remove="MarshalAppServer.cs" />
+    <Compile Remove="ProcessBootstrap.cs" />
+    <Compile Remove="ProcessLocker.cs" />
+    <Compile Remove="TypeValidator.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="4.7.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\SuperSocket.Common.csproj" />
+    <ProjectReference Include="..\SocketBase\SuperSocket.SocketBase.csproj" />
+  </ItemGroup>
+
+</Project>
