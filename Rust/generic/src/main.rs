@@ -21,4 +21,12 @@ fn main() {
 
     notify(&weather);
     println!("{}", weather.summary());
+
+    let numbers = vec![1,2,3,4,5];
+
+    let l1 = largest(&numbers);
+    println!("l1 : {}", l1);
+
+    let l2 = largets2(&numbers);
+    println!("l2 : {}", l2);
 }

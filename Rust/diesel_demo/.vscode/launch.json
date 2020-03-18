@@ -5,9 +5,9 @@
             "type":"lldb",
             "request":"launch",
             "name": "Debug(lldb)",
-            "program": "${workspaceRoot}/target/debug/{$NAME}",
+            "program": "${workspaceRoot}/target/debug/diesel_demo",
             "cwd":"${workspaceRoot}",
-            "preLaunchTask": "Rust: cargo build",
+            "preLaunchTask": "cargo",
             "sourceLanguages": ["rust"]
         }
     ],

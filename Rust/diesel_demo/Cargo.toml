@@ -1,0 +1,19 @@
+[package]
+name = "diesel_demo"
+version = "0.1.0"
+authors = ["byungil <sysroad@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "diesel_demo"
+path = "src/lib.rs"
+
+[[bin]]
+name = "diesel_demo"
+path = "src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = { version = "1.4.x", features = ["mysql", "postgres"] }
+dotenv = { version = "0.15.x" }

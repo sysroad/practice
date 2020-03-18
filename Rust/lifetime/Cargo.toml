@@ -1,0 +1,17 @@
+[package]
+name = "lifetime"
+version = "0.1.0"
+authors = ["byungil <sysroad@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "lifetime"
+path = "src/lib.rs"
+
+[[bin]]
+name = "lifetime"
+path = "src/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
